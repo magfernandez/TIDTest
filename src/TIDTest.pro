@@ -19,4 +19,5 @@ SOURCES += main.cpp \
     Network/NetworkBalancer.cpp
 
 HEADERS += \
-    Network/NetworkBalancer.hpp
+    Network/NetworkBalancer.hpp \
+    Tests/Unit/Network/TestNetworkBalancer.hpp
