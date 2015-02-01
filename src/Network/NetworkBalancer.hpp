@@ -3,8 +3,6 @@
 
 #include <stdlib.h>
 
-#define MAX_OUTPUTS 4
-
 namespace Network
 {
     class NetworkBalancer
@@ -23,7 +21,10 @@ namespace Network
          * @param length Length of buffer
          * @return Output channel chosen
          */
-        int sendTroughBalancer( char &Buffer, int length );
+        int sendTroughBalancer( const char *Buffer, int length );
+
+        /* @brief Total number of output channels */
+        const static int MAX_OUTPUTS = 4;
 
     private:
 
