@@ -136,6 +136,12 @@ public:
     }
     
     // TODO: Check that every result in the map has appeared near the same number of times than the rest
+    double aEstimatedPercentage = ( (double)aRepetitionNumber / (double)aPossibleResList.size() )*100.0;
+    
+    for ( std::map<int, int>::iterator it = aResultsMap.begin(); it!=aResultsMap.end(); ++it )
+    {
+        std::cout << it->first << " -> " << (double)it->second/100.0 << "% (" << ((double)it->second/100.0-aEstimatedPercentage) << "%)" ;
+    }
     
         
     }
