@@ -42,7 +42,7 @@ public:
      * @brief testSendTroughBalancer Test that iterates until the expected result based on
      * Round-Robin-4 differs from the result got from the sending procedure. The maximum number of
      * iterations assures this test finishes even if the sendTroughBalancer method is using a
-     * Round-Robin-4 strategy. MAX_TESTS_TO_FAIL number has to be big enough to assure there is are
+     * Round-Robin-4 strategy. MAX_TESTS_TO_FAIL number has to be big enough to assure there are no
      * false negatives
      */
     void testSendTroughBalancer()
