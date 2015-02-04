@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     aSetStr.insert( std::make_pair( "gama_alta" , 4 ) );
 
     // Print str-int map
-    std::cout << "Map <str, int> contains:\n";
+    std::cout << "Set <str, int> contains:\n";
     for( t_OrderedSetStrInt::iterator it = aSetStr.begin();
          it !=aSetStr.end(); it++ )
     {
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     aSetInt.insert( std::make_pair( 99799 , 4 ) );
 
     // Print int-int map
-    std::cout << "Map <int, int> contains:\n";
+    std::cout << "Set <int, int> contains:\n";
     for( t_OrderedSetIntInt::iterator it = aSetInt.begin();
          it !=aSetInt.end(); it++ )
     {
